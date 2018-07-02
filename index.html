@@ -102,6 +102,99 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+
+                <!-- Button trigger modal -->
+                <div class="col-12 col-sm align-self-center">
+                    <button type="button" class="btn btn-warning btn-lg active" data-toggle="modal" data-target="#exampleModal">
+                        Reserve Table
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document" class="modal fade bd-example-modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Reserve Table</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row form-group">
+                                    <label for="inputEmail3" class="col-sm-3 col-form-label">Number of Guests</label>
+                                    <div class="col-sm-6">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">1</label>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline2">2</label>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline3">3</label>
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadioInline4">4</label>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline5">5</label>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="customRadioInline6" name="customRadioInline1" class="custom-control-input">
+                                                                <label class="custom-control-label" for="customRadioInline6">6</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="inputEmail3" class="col-sm-3">Section</label>
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                        </label>
+                                        <label class="btn btn-danger">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                        </label>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row">
+                                    <div class="col col-sm order-sm-first">
+                                        <form class="form-inline">
+                                            <div class="form-group mb-1">
+                                                <label for="staticEmail2" class="sr-only">Date and Time</label>
+                                                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Date and Time">
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-sm order-sm-first">
+                                        <input type="text" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col col-sm order-sm-first">
+                                        <input type="text" class="form-control" placeholder="Time">
+                                    </div>
+                                </div>
+                                </form>
+
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-12 col-sm align-self-center">
                     <a href="#Reserve a Table" class="btn btn-warning btn-lg active" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>"
                         data-placement="bottom" role="button" aria-pressed="true">Reserve Table</a>
@@ -151,16 +244,16 @@
                             </div>
                         </div>
                         <ol class="carousel-indicators">
-                                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#mycarousel" data-slide-to="1"></li>
-                                <li data-target="#mycarousel" data-slide-to="2"></li>
-                            </ol>
-                            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </a>
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                            <li data-target="#mycarousel" data-slide-to="2"></li>
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
                     </div>
                 </div>
                 <div class="row row-content align-items-center">
@@ -284,82 +377,83 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2 col-0"></div>
             </div>
-
-            <footer class="footer">
-                <div class="row">
-                    <div class="col-4 offset-1 col-sm-2">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="./index">Home</a>
-                            </li>
-                            <li>
-                                <a href="./aboutus.html">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu</a>
-                            </li>
-                            <li>
-                                <a href="./contactus.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-7 col-sm-5">
-                        <h5>Our Address</h5>
-                        <address>
-                            121, Clear Water Bay Road
-                            <br> Clear Water Bay, Kowloon
-                            <br> HONG KONG
-                            <br>
-                            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678
-                            <br>
-                            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321
-                            <br>
-                            <i class="fa fa-envelope fa-lg"></i>:
-                            <a href="mailto:confusion@food.net">confusion@food.net</a>
-                        </address>
-                    </div>
-                    <div class="col-12 col-sm-4 align-self-center">
-                        <div class="text-center">
-                            <a class="btn btn-social-icon btn-google" href="http://google.com/+">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/">
-                                <i class="fa fa-youtube"></i>
-                            </a>
-                            <a class="btn btn-social-icon" href="mailto:">
-                                <i class="fa fa-envelope-o"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <p>© Copyright 2018 Ristorante Con Fusion</p>
-                    </div>
-                </div>
         </div>
-        </footer>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="./index">Home</a>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="./contactus.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-7 col-sm-5">
+                <h5>Our Address</h5>
+                <address>
+                    121, Clear Water Bay Road
+                    <br> Clear Water Bay, Kowloon
+                    <br> HONG KONG
+                    <br>
+                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678
+                    <br>
+                    <i class="fa fa-fax fa-lg"></i>: +852 8765 4321
+                    <br>
+                    <i class="fa fa-envelope fa-lg"></i>:
+                    <a href="mailto:confusion@food.net">confusion@food.net</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div class="text-center">
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a class="btn btn-social-icon" href="mailto:">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2018 Ristorante Con Fusion</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
