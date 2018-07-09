@@ -17,17 +17,17 @@
 
 <body>
     <!-- Modal -->
-    <div class="modal fade" class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" class="modal fade bd-reserve-modal-lg" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="reserveModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document" class="modal fade bd-example-modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel" class="color=initial">Reserve Table</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="reserveModalLabel" class="color=initial">Reserve Table</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closebutton">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="reservemodelbody">
                     <div class="row form-group">
                         <label for="guestnumber" class="col-sm-3 col-form-label">Number of Guests</label>
                         <div class="col-sm-9">
@@ -126,7 +126,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a data-toggle="modal" onclick="showModal('#loginModal')">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -139,11 +139,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" data-dismiss="modal" id="closebutton">
                         &times;
                     </button>
                 </div>
-                <dive class="modal-body">
+                <div class="modal-body">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -167,6 +167,7 @@
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                         </div>
                     </form>
+                </div>
 
             </div>
         </div>
@@ -187,7 +188,7 @@
 
                 <!-- Button trigger modal -->
                 <div class="col-12 col-sm align-self-center">
-                    <button type="button" class="btn btn-warning btn-lg active" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn btn-warning btn-lg active" onclick="showModal('#reserveModal')">
                         Reserve Table
                     </button>
                 </div>
@@ -286,28 +287,28 @@
                 </div>
                 <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
             </div>
-        
 
-        <div class="container">
-            <div class="row row-content align-items-center">
-                <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                    <h3>Meet our Culinary Specialists</h3>
-                </div>
-                <div class="col col-sm order-sm-first col-md">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
-                        <div class="media-body">
-                            <h2 class="mt-0">Alberto Somayya</h2>
-                            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely
-                                with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian
-                                fusion experiences.
-                            </p>
+
+            <div class="container">
+                <div class="row row-content align-items-center">
+                    <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                        <h3>Meet our Culinary Specialists</h3>
+                    </div>
+                    <div class="col col-sm order-sm-first col-md">
+                        <div class="media">
+                            <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
+                            <div class="media-body">
+                                <h2 class="mt-0">Alberto Somayya</h2>
+                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely
+                                    with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian
+                                    fusion experiences.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <footer class="footer">
@@ -379,6 +380,10 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
+        function showModal(modalId) {
+            $(modalId).modal();
+        }
+
         $(document).ready(function () {
             $('#mycarousel').carousel({ interval: 2000 });
             $('#carouselButton').click(function () {
@@ -395,6 +400,7 @@
             });
         })
     </script>
+ 
 </body>
 
 </html>
