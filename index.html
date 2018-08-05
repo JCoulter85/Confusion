@@ -26,7 +26,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="reserveModalLabel" class="color=initial">Reserve Table</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closebutton">
+                    <button type="button" id="closebutton" class="close" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -129,7 +129,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" onclick="showModal('#loginModal')">
+                    <a id="Showlogin" onclick="showModal(this.id)">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -191,7 +191,7 @@
 
                 <!-- Button trigger modal -->
                 <div class="col-12 col-sm align-self-center">
-                    <button type="button" class="btn btn-warning btn-lg active" onclick="showModal('#reserveModal')">
+                    <button type="button" id="ReserveTableButton" class="btn btn-warning btn-lg active" onclick="showModal(this.id)">
                         Reserve Table
                     </button>
                 </div>
@@ -383,7 +383,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script>
+        function showModal(buttonId) {
+            if (buttonid === '#ReserveTableButton')
+            $(modalId).modal();
+        }
+    </script>
     <!-- endbuild -->
 </body>
 
