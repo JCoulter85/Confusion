@@ -26,7 +26,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="reserveModalLabel" class="color=initial">Reserve Table</h5>
-                    <button type="button" id="closebutton" class="close" aria-label="Close">
+                    <button type="button" id="closebutton" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -129,7 +129,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a id="Showlogin" onclick="showModal(this.id)">
+                    <a id="Showlogin" class="btn" onclick="showModal(this.id)">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -384,10 +384,13 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        function showModal(buttonId) {
-            if (buttonid === '#ReserveTableButton')
-            $(modalId).modal();
-        }
+            function showModal(buttonId) {
+                if (buttonId === "ReserveTableButton") {
+                    $("#reserveModal").modal();
+                } else if (button === "LoginButton") {
+                    $("#loginModal").modal();
+                }
+            }
     </script>
     <!-- endbuild -->
 </body>
